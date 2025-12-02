@@ -117,7 +117,7 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({ matches, onBack, u
 
     if (activeMatch) {
         return (
-            <div className="flex flex-col h-full bg-black/80 backdrop-blur-xl">
+            <div className="flex flex-col h-[100dvh] bg-black/80 backdrop-blur-xl pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
                 {/* Header */}
                 <div className="p-4 border-b border-white/10 bg-black/40">
                     <div className="flex items-center gap-4 mb-2">
@@ -158,8 +158,8 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({ matches, onBack, u
                         <div key={msg.id} className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
                             <div
                                 className={`max-w-[80%] p-4 rounded-2xl ${msg.sender === 'user'
-                                        ? 'bg-pink-600 text-white rounded-tr-none'
-                                        : 'bg-white/10 text-gray-200 rounded-tl-none border border-white/5'
+                                    ? 'bg-pink-600 text-white rounded-tr-none'
+                                    : 'bg-white/10 text-gray-200 rounded-tl-none border border-white/5'
                                     }`}
                             >
                                 {msg.isLocked ? (
@@ -191,7 +191,7 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({ matches, onBack, u
                 </div>
 
                 {/* Input */}
-                <div className="p-4 border-t border-white/10 bg-black/40">
+                <div className="p-4 border-t border-white/10 bg-black/40 sticky bottom-0 z-30">
                     <div className="flex gap-2">
                         <input
                             type="text"

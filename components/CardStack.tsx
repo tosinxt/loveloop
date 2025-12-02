@@ -106,7 +106,7 @@ export const CardStack: React.FC<CardStackProps> = ({ profiles, onMatch, onRejec
                         drag={isTop ? 'x' : false}
                         dragConstraints={{ left: 0, right: 0 }}
                         onDragEnd={handleDragEnd}
-                        className="absolute w-[90%] max-w-[360px] h-[65vh] rounded-3xl overflow-hidden shadow-2xl cursor-grab active:cursor-grabbing"
+                        className="absolute w-[95%] max-w-[360px] h-[65vh] rounded-3xl overflow-hidden shadow-2xl cursor-grab active:cursor-grabbing"
                     >
                         {/* Image */}
                         <div

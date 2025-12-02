@@ -22,7 +22,7 @@ export const ShopModal: React.FC<ShopModalProps> = ({ onClose, onBuyCredits }) =
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 50, opacity: 0 }}
-                className="glass-card w-full max-w-md rounded-3xl overflow-hidden flex flex-col relative max-h-[90vh]"
+                className="glass-card w-full h-full md:max-w-md md:rounded-3xl rounded-none overflow-hidden flex flex-col relative md:max-h-[90vh]"
             >
                 {/* Header */}
                 <div className="p-6 border-b border-white/10 flex justify-between items-center">

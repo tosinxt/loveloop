@@ -19,7 +19,7 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({ profile, onClose, on
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.9, opacity: 0 }}
-                className="glass-card w-full max-w-md h-[80vh] rounded-3xl overflow-hidden flex flex-col relative"
+                className="glass-card w-full h-full md:max-w-md md:h-[80vh] md:rounded-3xl rounded-none overflow-hidden flex flex-col relative"
             >
                 {/* Close Button */}
                 <button

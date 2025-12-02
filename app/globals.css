@@ -10,6 +10,7 @@ body {
   background: var(--background);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   overflow: hidden;
+  touch-action: manipulation;
   /* Prevent scrolling for PWA feel */
 }
 
